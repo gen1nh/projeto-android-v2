@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('/fonts/Google-Sans-normal-700-100.ttf') format(opentype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* Cores principais - Material You Android Theme */
+  --color-primary: #3DDC84;
+  --color-primary-dark: #249B5D;
+  --color-secondary: #2F80ED;
+  --color-accent: #FFC107;
+
+  /* Neutros */
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F0F4F8;
+  --color-background: #E8F5E9;
+
+  /* Texto */
+  --color-text: #1B1B1B;
+  --color-text-light: #FAFAFA;
+
+  /* Outros */
+  --color-border: #DADCE0;
+  --color-shadow: #c2c2c238;
+
+  /* Fontes */
+  --fonte-padrao: "Google Sans", Verdana, Helvetica, sans-serif;
+
+    font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--fonte-padrao);
+  font-size: 1.6rem;
+}
+
+header {
+  height: 8.8rem;
+  box-shadow: 0 4px 6px var(--color-shadow);
+}
+
+.logo {
+  padding-right: 27.0rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 8.8rem;
+}
+
+header .main-navigation.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.main-navigation.container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  justify-content: space-between;
+}
+
+.main-navigation {
+}
+
+.menu {
+  display: flex;
+  height: 8.8rem;
+}
+
+ul li {
+  font-family: "Roboto",sans-serif;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 8.8rem;
+  gap: 4rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.8rem;
+  align-items: center;
+  padding-left: 7.2rem;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; /* distância entre texto e imagem */
+  color: var(--color-text); /* pra manter cor herdada */
+  font-size: 1.6rem;
+}
+
+.menu li a .seta {
+  width: 1.2rem;
+  height: auto;
+}
+
+.btn-primary {
+  font-weight: 700;
+  border-radius: 3rem;
+  background-color: #202124;
+  color: #FAFAFA;
+  padding: 12px;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-left: 2.4rem;
+  padding-right: 3.4rem;
+}
+
