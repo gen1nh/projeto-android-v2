@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Android v2</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Android v2</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+  </head>
+  <body>
     <header>
+      <nav
+        class="main-navigation container"
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        <div class="logo">
+          <img src="./assets/Link - Android Logo → SVG.png" alt="logo" />
+        </div>
 
-      <nav class="main-navigation container" role="navigation" aria-label="Menu principal">
-        <div class="logo"><img src="./assets/Link - Android Logo → SVG.png" alt="logo"></div>
-          <ul class="menu">
-            <li>
-              <a href="#">
-                Descubra o Android
-                <img class="seta" src="./assets/seta-links.svg" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Trocar e transferir
-                <img class="seta" src="./assets/seta-links.svg" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Conheça os dispositivos
-                <img class="seta" src="./assets/seta-links.svg" alt="">
-              </a>
-            </li>
-          </ul>
+        <ul class="menu">
+          <li>
+            <a href="#">
+              Descubra o Android
+              <img class="seta" src="./assets/seta-links.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Trocar e transferir
+              <img class="seta" src="./assets/seta-links.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Conheça os dispositivos
+              <img class="seta" src="./assets/seta-links.svg" alt="" />
+            </a>
+          </li>
+        </ul>
 
         <div class="actions">
           <div class="search">
-            <img src="./assets/icon - search.png" alt="buscar">
+            <img src="./assets/icon - search.png" alt="buscar" />
           </div>
 
-          <button class="btn-primary">Comprar telefones <img src="./assets/seta-button.svg" alt="">
-
+          <button class="btn-primary">
+            Comprar telefones
+            <img src="./assets/seta-button.svg" alt="" />
           </button>
         </div>
       </nav>
-        </div>
     </header>
+
+    <article>
+      <main>
+          <div class="s-hero">
+            <button class="btn-secondary">
+              <img src="./assets/icon-android-btn.svg" alt="" /> Só no Android
+            </button>
+            <h1>Mostre seu ponto de vista <br> com o Gemini</h1>
+            <button class="btn-terciary"
+            >Teste o Gemini <img src="./assets/icon-seta-abrir.png" alt=""
+            ></button>
+          </div>
+      </main>
+
+      <section class="media">
+        <img class="media-img" src="./assets/media.svg" alt="video">
+      </section>
+    </article>
+    
+  </body>
   
-</body>
 </html>

@@ -13,7 +13,7 @@
   /* Cores principais - Material You Android Theme */
   --color-primary: #3DDC84;
   --color-primary-dark: #249B5D;
-  --color-secondary: #2F80ED;
+  --color-secondary: #E8F5E9;
   --color-accent: #FFC107;
 
   /* Neutros */
@@ -42,6 +42,12 @@
   list-style: none;
 }
 
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--color-surface);
   color: var(--color-text);
@@ -50,7 +56,8 @@ body {
 }
 
 header {
-  height: 8.8rem;
+  width: 100%;
+  height: auto;
   box-shadow: 0 4px 6px var(--color-shadow);
 }
 
@@ -77,9 +84,6 @@ header .main-navigation.container {
   justify-content: space-between;
 }
 
-.main-navigation {
-}
-
 .menu {
   display: flex;
   height: 8.8rem;
@@ -87,7 +91,7 @@ header .main-navigation.container {
 
 ul li {
   font-family: "Roboto",sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .menu {
@@ -119,7 +123,8 @@ ul li {
 }
 
 .btn-primary {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1.5rem;
   border-radius: 3rem;
   background-color: #202124;
   color: #FAFAFA;
@@ -131,3 +136,82 @@ ul li {
   padding-right: 3.4rem;
 }
 
+.btn-secondary {
+  background-color: var(--color-secondary);
+  font-weight: 700;
+  border: none;
+  color: #202124;
+  border-radius: 0.8rem;
+  padding: 0.6rem 1rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn-terciary {
+  font-weight: 700;
+  border-radius: 3rem;
+  background: linear-gradient(
+    to right,
+    #d7e6ff 0%,
+    #c7e4ff 11%,
+    #dce2ff 22%,
+    #ecdcfb 33%,
+    #d7e6ff 44%,
+    #d7e6ff 56%,
+    #c7e4ff 67%,
+    #dce2ff 78%,
+    #ecdcfb 89%,
+    #d7e6ff 100%
+  );
+  font-weight: 700;
+  border-radius: 3rem;
+  color: #202124;
+  padding: 12px;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  border: none;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 7.2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8.8rem;
+  max-width: 100%;
+}
+
+.s-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  gap: 1.6rem;
+  padding-bottom: 6rem;
+}
+
+.media {
+  margin-bottom: 14.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.media-img {
+  width: 100%;
+  max-width: 128rem;
+  height: auto;
+  display: block;
+}
